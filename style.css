@@ -1,0 +1,159 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    font-family:"Gabarito", sans-serif; 
+
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    gap: 10px;
+    align-items: center;
+
+
+}
+
+.navbar__s1--title{
+    color: #a435f0;
+}
+
+.navbar__s2{
+    border: solid 1px black;
+    width: 60%;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+    align-items: center;
+
+}
+
+.navbar__s2 input{
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.navbar__s2 input:focus{
+    outline: none;
+}
+
+.navbar__s3{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.s4__catogries{
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+
+}
+
+.s4__catogries p{
+    background-color: #a435f0;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.section__image img{
+    width: 100%;
+}
+
+.recommended{
+    padding: 10px;
+}
+
+
+.cource-card{
+    width: 360px;
+    margin-top: 10px;
+}
+.cource-card img{
+    width: 100%;
+    height: 50%;
+
+}
+
+
+
+.recommended__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.topics{
+    padding: 10px;
+}
+
+.topics__container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topics__container p{
+    border: solid grey 2px;
+    padding: 10px;
+    margin: 5px;
+    flex-grow: 4;
+    flex-basis: 20%;
+    
+}
+
+.popular__title{
+    padding: 10px;
+}
+.popular__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.footer__container{
+    background-color: black;
+    color: white;
+
+}
+
+.footer__one{
+
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.footer__one--s1{
+    padding: 20px;
+    gap: 10px;
+}
+
+.footer__one p{
+    margin: 20pxr;
+}
+
+.footer__one--s2{
+    margin: 20px;
+}
+
+.footer__two{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
