@@ -16,6 +16,10 @@ body{
     border-bottom: 1px solid black;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 
 
 }
@@ -33,6 +37,7 @@ body{
     gap: 10px;
     font-size: 24px;
     align-items: center;
+    background-color: transparent;
 
 }
 
@@ -48,12 +53,29 @@ body{
 
 .navbar__s3{
     display: flex;
-    padding: 10px;
     gap: 20px;
     align-items: center;
 
 }
+/* my learning popup*/
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
 
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    right: 0%;
+    padding: 20px;
+    display: none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
 .s4__catogries{
     border: 1px solid black;
     display: flex;
@@ -64,13 +86,27 @@ body{
 
 .s4__catogries p{
     background-color: #a435f0;
-    color: white;
+    color: black;
     border-radius: 30px;
     padding: 10px;
 }
 
 .section__image img{
     width: 100%;
+    position: relative;
+
+}
+
+.sale__image-offer{
+    position: absolute;
+    background-color: sandybrown;
+    width: 400px;
+    color: white;
+    height: 80px;
+    bottom: 360px;
+    left: 80px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .recommended{
