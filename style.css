@@ -57,6 +57,10 @@ body{
     align-items: center;
 
 }
+.navbar__s4{
+    display: none;
+}
+
 /* my learning popup*/
 .mylearning{
     position: relative;
@@ -98,21 +102,23 @@ body{
     border: solid 1px #a435f0;
 }
 
-.section__image img{
-    width: 100%;
+.sale__image{
     position: relative;
+}
+
+.sale__image img{
+    width: 100%;
 
 }
 
 .sale__image-offer{
-    position: absolute;
     background-color: sandybrown;
-    width: 400px;
+    width: 35%;
     color: white;
-    height: 80px;
-    bottom: 360px;
-    left: 80px;
-    padding: 20px;
+    top: 10%;
+    left: 10%;
+    padding: 2%;
+    position: absolute;
     border-radius: 20px;
     animation-name: zoom;
     animation-duration: 3s;
@@ -138,8 +144,10 @@ body{
 
 
 .cource-card{
-    width: 360px;
-    margin-top: 10px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin:5px;
+
 }
 .cource-card img{
     width: 100%;
@@ -215,4 +223,31 @@ body{
     justify-content: space-between;
     margin: 20px;
     align-items: center;
+}
+
+/* media queries */
+
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .cource-card{
+        flex-basis: 40%;
+    }
+
+    .s4__catogries{
+        display: none;    
+    }
+
+    .navbar__s2,.navbar__s3{
+        display: none;
+    }
+
+    .navbar__s4{
+        display: block;
+    }
+
 }
